@@ -31,3 +31,7 @@ For the following requests, are necessary the role codes for Authorization based
 ! If a server issue appears, then a response has the status code 500 
 ! If the Access Token expires, then a response has the status code 403 (Forbidden)
 ! If the user doesn't authorize, then a response has the status code 401 (Unauthorized)
+
+
+## Run this project
+After **installing the code locally** (cloning or downloading zip), you must **install the dependencies**, using the command: npm install. Following, you must **create the .env file** and **add the variable ACCESS_TOKEN_SECRET**, which will be the access token key. I create this key by opening the NodeJS in the terminal and using the command: **require('crypto').randomBytes(64).toString('hex');**
